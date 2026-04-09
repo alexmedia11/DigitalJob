@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bigotic plug</title>
+
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background: #f2f5f7;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 420px;
+  margin: 30px auto;
+  background: #fff;
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+h1 {
+  font-size: 22px;
+  color: #111;
+}
+
+.highlight {
+  color: #e74c3c;
+}
+
+h2 {
+  font-size: 16px;
+  margin-top: 20px;
+  text-decoration: underline;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+ul li {
+  margin: 12px 0;
+  font-size: 14px;
+}
+
+ul li::before {
+  content: "✔ ";
+  color: green;
+  font-weight: bold;
+}
+
+.commit-box {
+  background: #e8f5e9;
+  padding: 12px;
+  border-radius: 10px;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.proof {
+  margin-top: 20px;
+  background: #fff3cd;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+.timer {
+  font-size: 18px;
+  color: red;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.btn {
+  display: block;
+  margin-top: 20px;
+  padding: 15px;
+  background: #27ae60;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.btn:hover {
+  background: #219150;
+}
+
+.small-text {
+  font-size: 12px;
+  margin-top: 10px;
+  color: #666;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>
+Start Earning Daily <br>
+<span class="highlight">With Just Your Phone 💰</span>
+</h1>
+
+<h2>You Only Need These 3 Things</h2>
+
+<ul>
+<li>A smartphone with internet</li>
+<li>1–2 hours daily</li>
+<li>Consistency & action</li>
+</ul>
+
+<div class="commit-box">
+✔ YES! I’m ready to start earning and change my financial level.
+</div>
+
+<div class="proof">
+💸 I recently withdrew <b>₦55,900</b> from this system.<br>
+Others are earning too — you’re next.
+</div>
+
+<div class="timer" id="countdown">
+⚡ Limited slots remaining...
+</div>
+
+<a href="https://wa.me/2349159436827" class="btn">
+CLICK HERE TO GET STARTED 🔌💸
+</a>
+
+<div class="small-text">
+No experience needed • Works with your phone only
+</div>
+
+</div>
+
+<script>
+// Simple countdown urgency (fake slot reducer)
+let time = 300; // 10 minutes
+
+setInterval(() => {
+  let minutes = Math.floor(time / 60);
+  let seconds = time % 60;
+
+  document.getElementById("countdown").innerHTML =
+    "⚡ Offer closing in " + minutes + ":" + (seconds < 10 ? "0" : "") + seconds;
+
+  if (time > 0) time--;
+}, 1000);
+</script>
+
+</body>
+</html>
